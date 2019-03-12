@@ -1,0 +1,111 @@
+body{
+	margin: 0;
+	padding: 0;
+	background: radial-gradient(#e3e0cf 20%, #9fa8a3);
+	height: 100vh;
+}
+.box{
+	height: 12.5rem;
+	width: 62.5rem;
+	background-color: #2D2D2D;
+	border-radius: 5px;
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%,-50%);
+}
+.main{
+	height: 25rem;
+	width: 28rem;
+	background-color: #fff;
+	border-radius: 5px;
+	position: absolute;
+	top: 50%;
+	left: 70%;
+	transform: translate(-50%,-50%);
+	z-index: 99;
+}
+.login_form,
+.signup_form{
+	position: absolute;
+	top: 50%;
+	left: 70%;
+	transform: translate(-50%,-50%);
+	z-index:999;
+}
+.signup_form{
+	top: 45%;
+	left: 75%;
+	visibility: hidden;
+}
+.login_form h1,
+.signup_form h1{
+	font-family: arial;
+	font-size: 2.5rem;
+	color:#9fa8a3;
+}
+.login_form input,
+.signup_form input{
+	height: 40px;
+	width: 300px;
+	border: 0;
+	outline: none;
+	border-bottom: 1px solid black;
+	margin: 5px;
+}
+.login_form button,
+.signup_form button{
+	height: 35px;
+	width: 130px;
+	background: radial-gradient(#e3e0cf 20%, #9fa8a3);
+	font-family: monospace;
+	font-size: 1.25rem;
+	color: #9fa8a3;
+	border: none;
+	outline: none;
+	border-radius: 5px;
+	margin-top: 30px;
+}
+#login_btn,
+#signup_btn{
+	height: 35px;
+	width: 130px;
+	background: transparent;
+	font-family: monospace;
+	font-size: 1rem;
+	color: #fff;
+	border: 1px solid white;
+	outline: none;
+	border-radius: 5px;
+	position: absolute;
+	left: 75%;
+	top:65%;
+	transform: translate(-50%,-50%);
+	transition: all .5s;
+}
+
+#signup_btn{
+	left:25%;
+}
+
+#login_btn:hover,
+#signup_btn:hover{
+	background: white;
+	color: #9fa8a3;
+	cursor: pointer;
+}
+.login_msg,
+.signup_msg{
+	font-family: arial;
+	font-size: 25px;
+	color: #fff;
+	position: absolute;
+	top:35%;
+	left:75%;
+	transform: translate(-50%,-50%);
+	z-index:1;
+}
+.signup_msg{
+	left: 25%;
+}
+
